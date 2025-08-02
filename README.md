@@ -47,6 +47,10 @@ Professional DevOps Fresher Portfolio
 ### 🧰 Skills & Tools
 
 
+DevOps | Jenkins | GitHub | AWS EC2/S3 | Docker
+Linux | Shell Scripting | CI/CD Concepts
+
+
 ---
 
 ### 📫 Connect with Me
