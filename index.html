@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul | DevOps Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center gap-8 mb-16">
+            <div class="md:w-1/2">
+                <div class="bg-gradient-to-r from-primary to-secondary p-1 rounded-full inline-block">
+                    <img src="http://static.photos/technology/320x320/1" alt="Rahul" class="w-48 h-48 rounded-full object-cover border-4 border-gray-200 dark:border-gray-800">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Hi, I'm Rahul</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-primary mb-4">DevOps Engineer</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">Automating deployments • Cloud Architectures • CI/CD Pipelines</p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="bg-primary hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition">Contact Me</a>
+                    <a href="#projects" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition">My Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Professional Summary</h2>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-secondary mr-3 mt-1"></i>
+                        <span>6 months of internship experience working as a DevOps Engineer</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-secondary mr-3 mt-1"></i>
+                        <span>Skilled in CI/CD pipeline creation using Jenkins and GitHub</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-secondary mr-3 mt-1"></i>
+                        <span>Hands-on with AWS cloud services including EC2, S3, and IAM</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-secondary mr-3 mt-1"></i>
+                        <span>Good understanding of Docker and Kubernetes for containerized deployments</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-secondary mr-3 mt-1"></i>
+                        <span>Proficient in Linux commands and Bash scripting for automation</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Organizational Experience</h2>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                <h3 class="text-xl font-semibold text-primary mb-4">Highcatch Pvt Ltd — DevOps Intern (6 Months)</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-6">Worked on real-time DevOps projects including CI/CD pipeline setup, AWS deployment, and container orchestration</p>
+                <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+                    <li class="flex items-start">
+                        <i data-feather="zap" class="text-secondary mr-3 mt-1"></i>
+                        <span>Utilized Python scripting to automate repetitive tasks, enhancing team productivity</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="zap" class="text-secondary mr-3 mt-1"></i>
+                        <span>Set up and maintained Jenkins pipelines for seamless integration and deployment</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="zap" class="text-secondary mr-3 mt-1"></i>
+                        <span>Managed Docker containers and assisted in Kubernetes orchestration</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="zap" class="text-secondary mr-3 mt-1"></i>
+                        <span>Implemented Terraform scripts to automate AWS resource provisioning</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Academic Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                            <i data-feather="cpu" class="text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Automated Web App Deployment</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Built a fully automated CI/CD pipeline for a Python web application using AWS, Jenkins, Docker, GitHub</p>
+                    <a href="https://github.com/rahul9041/docker-web-app-deployment" target="_blank" class="inline-flex items-center text-primary hover:underline">
+                        <i data-feather="github" class="mr-2"></i> View on GitHub
+                    </a>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                            <i data-feather="cloud" class="text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Static Website Hosting on AWS</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Created and hosted a static HTML website on Amazon S3 with CloudFront CDN integration</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Tech Gallery</h2>
+                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
+                    <i data-feather="moon" class="text-gray-700 dark:text-gray-300"></i>
+                </button>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="gallery-item">
+                    <img src="http://static.photos/technology/400x300/1" alt="AWS" class="rounded-lg shadow hover:scale-105 transition-transform">
+                </div>
+                <div class="gallery-item">
+                    <img src="http://static.photos/technology/400x300/2" alt="Docker" class="rounded-lg shadow hover:scale-105 transition-transform">
+                </div>
+                <div class="gallery-item">
+                    <img src="http://static.photos/technology/400x300/3" alt="Kubernetes" class="rounded-lg shadow hover:scale-105 transition-transform">
+                </div>
+                <div class="gallery-item">
+                    <img src="http://static.photos/technology/400x300/4" alt="Jenkins" class="rounded-lg shadow hover:scale-105 transition-transform">
+                </div>
+                <div class="gallery-item">
+                    <img src="http://static.photos/technology/400x300/5" alt="Terraform" class="rounded-lg shadow hover:scale-105 transition-transform">
+                </div>
+                <div class="gallery-item">
+                    <img src="http://static.photos/technology/400x300/6" alt="GitHub" class="rounded-lg shadow hover:scale-105 transition-transform">
+                </div>
+                <div class="gallery-item">
+                    <img src="http://static.photos/technology/400x300/7" alt="Linux" class="rounded-lg shadow hover:scale-105 transition-transform">
+                </div>
+                <div class="gallery-item">
+                    <img src="http://static.photos/technology/400x300/8" alt="Python" class="rounded-lg shadow hover:scale-105 transition-transform">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Get In Touch</h2>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary mb-4">Contact Information</h3>
+                        <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center">
+                                <i data-feather="mail" class="mr-3"></i>
+                                <span>rahul.h.p7265@gmail.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="phone" class="mr-3"></i>
+                                <span>+91 7347267636</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="map-pin" class="mr-3"></i>
+                                <span>H No 22, St No 16, New Professor Colony, Jalalpur Road, Bahadurgarh, Patiala, Punjab, 147021</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="https://github.com/rahul90411" target="_blank" class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                                <i data-feather="github"></i>
+                            </a>
+                            <a href="#" class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary mb-4">Send Me a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-white">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-white">
+                            </div>
+                            <div>
+                                <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-white"></textarea>
+                            </div>
+                            <button type="submit" class="bg-primary hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
